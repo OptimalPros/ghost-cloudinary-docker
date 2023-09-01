@@ -38,6 +38,7 @@ RUN set -ex; \
     su-exec node ghost config mail.options.service Mailgun; \
     su-exec node ghost config mail.options.host smtp.mailgun.org; \
     su-exec node ghost config mail.options.port 465; \
+    su-exec node ghost config url https://newsletter.optimalpros.com; \
     su-exec node ghost config mail.options.secure true; \
     su-exec node ghost config mail.options.auth.user $MAILGUN_USER; \
     su-exec node ghost config mail.options.auth.pass $MAILGUN_PASS; \
