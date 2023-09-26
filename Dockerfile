@@ -1,4 +1,4 @@
-FROM ghost:5.60-alpine as cloudinary
+FROM ghost:5.65.0-alpine as cloudinary
 RUN apk add g++ make python3
 RUN su-exec node yarn add ghost-storage-cloudinary
 
