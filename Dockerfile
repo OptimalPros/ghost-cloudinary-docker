@@ -42,5 +42,5 @@ RUN set -ex; \
     su-exec node ghost config mail.options.secure true; \
     su-exec node ghost config mail.options.auth.user $MAILGUN_USER; \
     su-exec node ghost config mail.options.auth.pass $MAILGUN_PASS; \
-    su-exec node ghost config mail.from 'no-reply@wkmn.email' ; \
-    su-exec node ghost config mail.replyTo 'support@wkmn.email' ;
+    su-exec node ghost config mail.from 'kelsey@optimalmarketers.com' ; \
+    su-exec node ghost config mail.replyTo 'support@optimalmarketers.com' ;
